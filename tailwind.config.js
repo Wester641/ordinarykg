@@ -8,6 +8,7 @@ module.exports = {
         serif: ["Manrope", "serif"],
       },
       colors: {
+        // regalgray: "#f4f4f4",
         black: "#000000",
         green: "#11B503",
         "dark-green": "#215713",
@@ -88,7 +89,6 @@ module.exports = {
 
   plugins: [
     // ...
-    
     // require('@tailwindcss/aspect-ratio'),
   ],
 };

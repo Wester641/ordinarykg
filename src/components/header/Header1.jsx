@@ -1,11 +1,50 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import {
-  navigation,
-  navigation1,
-  userNavigation,
-} from "./../../constans/navigationData";
+
+// const user = {
+//   name: "Tom Cook",
+//   email: "tom@example.com",
+//   imageUrl:
+//     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+// };
+const navigation = [
+  { name: "Портфолио", href: "#", current: false },
+  { name: "Каталог", href: "#", current: false },
+  { name: "О нас", href: "#", current: false },
+  { name: "Отзывы ", href: "#", current: false },
+  { name: "Доставка и оплата", href: "#", current: false },
+  { name: "Пломбы свинцовые, пластиковые", href: "#", current: false },
+  { name: "Мы в Whatsapp", href: "#", current: false },
+  { name: "Возврат обмен", href: "#", current: false },
+  { name: "Статья", href: "#", current: false },
+];
+// const userNavigation = [
+//   { name: "Your Profile", href: "#" },
+//   { name: "Settings", href: "#" },
+//   { name: "Sign out", href: "#" },
+// ];
+
+const contactInfo = [
+  { title: "ТОО DMR Company - 'С НАМИ НАДЕЖНО' город Алматы" },
+  {
+    title: "Телефоны:",
+    phoneNumber1: "+7 (707) 777-41-97",
+    desc: "Для заказа",
+    phoneNumber2: "+7 (701) 777-41-97",
+    desc1: "Для заказа, WhatsApp",
+    phoneNumber3: "+7 (747) 565-49-93",
+    desc2: "Для заказа, WhatsApp",
+  },
+  { title: "Контакное лицо", person: "Алимбетова Гульсайран" },
+  {
+    title: "Адрес:",
+    address:
+      "ул Гоголя 86 офис 218 уг. Наурызбай Батыра, бизнес центр 'Казжол' (высотное здание), главный вход со стороны Гоголя и дополнительный вход со стороны Наурызбай Батыра (первый поворот налево - шлагбаум), Алматы, Казахстан",
+  },
+  { title: "email:", Email: "123@mail.ru" },
+  { title: "Сайт" },
+];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -38,7 +77,7 @@ export default function Header() {
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
-                        {navigation1.map((item) => (
+                        {navigation.map((item) => (
                           <a
                             key={item.name}
                             href={item.href}
@@ -69,17 +108,17 @@ export default function Header() {
 
                       {/* Profile dropdown */}
                       <Menu as="div" className="relative ml-3">
-                        {/* <div>
-                          <Menu.Button className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                            <span className="absolute -inset-1.5" />
-                            <span className="sr-only">Open user menu</span>
-                            <img
-                              className="h-8 w-8 rounded-full"
-                              src={user.imageUrl}
-                              alt=""
-                            />
-                          </Menu.Button>
-                        </div> */}
+                        {/* <div> */}
+                        {/* <Menu.Button className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                          <span className="absolute -inset-1.5" />
+                          <span className="sr-only">Open user menu</span>
+                          <img
+                            className="h-8 w-8 rounded-full"
+                            src={user.imageUrl}
+                            alt=""
+                          />
+                        </Menu.Button> */}
+                        {/* </div>
                         <Transition
                           as={Fragment}
                           enter="transition ease-out duration-100"
@@ -88,27 +127,20 @@ export default function Header() {
                           leave="transition ease-in duration-75"
                           leaveFrom="transform opacity-100 scale-100"
                           leaveTo="transform opacity-0 scale-95"
-                        >
-                          <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                            {/* {userNavigation.map((item) => (
-                              <Menu.Item key={item.name}>
-                                {({ active }) => (
-                                  <div
-                                    className={classNames(
-                                      active ? "bg-green-100" : "",
-                                      "block px-4 py-2 text-sm text-green-700"
-                                    )}
-                                  >
-                                    <strong>{item.name}</strong>
-                                    {userNavigation.phoneNumber.map((nav) => (
-                                      <p>{nav}</p>
-                                    ))}
-                                  </div>
-                                )}
-                              </Menu.Item>
-                            ))} */}
-                          </Menu.Items>
-                        </Transition>
+                        > */}
+                        <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          {contactInfo.map((item) => (
+                            <Menu.Item key={item.name}>
+                              {({ active }) => (
+                                <div>
+                                  <strong>{item.title}</strong>
+                                </div>
+                              )}
+                            </Menu.Item>
+                          ))}
+                        </Menu.Items>{" "}
+                        */}
+                        {/* </Transition> */}
                       </Menu>
                     </div>
                   </div>
@@ -153,8 +185,8 @@ export default function Header() {
                   ))}
                 </div>
                 <div className="border-t border-gray-700 pb-3 pt-4">
-                  <div className="flex items-center px-5">
-                    {/* <div className="flex-shrink-0">
+                  {/* <div className="flex items-center px-5">
+                    <div className="flex-shrink-0">
                       <img
                         className="h-10 w-10 rounded-full"
                         src={user.imageUrl}
@@ -168,17 +200,17 @@ export default function Header() {
                       <div className="text-sm font-medium leading-none text-gray-400">
                         {user.email}
                       </div>
-                    </div> */}
-                    {/* <button
+                    </div>
+                    <button
                       type="button"
                       className="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                     >
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">View notifications</span>
                       <BellIcon className="h-6 w-6" aria-hidden="true" />
-                    </button> */}
-                  </div>
-                  <div className="mt-3 space-y-1 px-2">
+                    </button>
+                  </div> */}
+                  {/* <div className="mt-3 space-y-1 px-2">
                     {userNavigation.map((item) => (
                       <Disclosure.Button
                         key={item.name}
@@ -189,6 +221,9 @@ export default function Header() {
                         {item.name}
                       </Disclosure.Button>
                     ))}
+                  </div> */}
+                  <div>
+                    <p></p>
                   </div>
                 </div>
               </Disclosure.Panel>

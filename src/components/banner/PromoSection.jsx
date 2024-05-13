@@ -24,11 +24,11 @@ export default function PromoSection() {
             Группы товаров и услуг
           </h2>
 
-          <div className="mt-6  space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0 lg:gap-5">
+          <div className="mt-6  space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-3 lg:space-y-0 lg:gap-3">
             {callouts.map((callout) => (
               <div
                 key={callout.name}
-                className="group relative  ring-offset-slate-100 border flex flex-col items-center justify-center "
+                className="group relative  ring-offset-slate-100 flex flex-col items-center justify-center  border border-solid border-gray"
               >
                 <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
                   <img

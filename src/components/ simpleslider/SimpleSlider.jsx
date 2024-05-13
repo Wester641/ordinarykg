@@ -37,43 +37,45 @@ const Slider = () => {
   }, []);
 
   return (
-    <div
-      className="relative w-full shadow-md
+    <section className="w-[97%] m-auto">
+      <div
+        className="relative w-full shadow-md
  h-96 overflow-hidden"
-    >
-      <div className="flex w-full h-full">
-        {carouselArray.map((image, index) => (
-          <div
-            key={index}
-            className={`w-full h-full absolute top-0 left-0 transform ${
-              index === currentIndex
-                ? "translate-x-0"
-                : index < currentIndex
-                ? "translate-x-full"
-                : "-translate-x-full"
-            } transition-transform duration-500 ease-in-out`}
+      >
+        <div className="flex w-full h-full">
+          {carouselArray.map((image, index) => (
+            <div
+              key={index}
+              className={`w-full h-full absolute top-0 left-0 transform ${
+                index === currentIndex
+                  ? "translate-x-0"
+                  : index < currentIndex
+                  ? "translate-x-full"
+                  : "-translate-x-full"
+              } transition-transform duration-500 ease-in-out`}
+            >
+              <img
+                src={image}
+                alt={`Slide ${index}`}
+                className="w-full h-full object-cover sm:object-cover"
+              />
+            </div>
+          ))}
+          <button
+            className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-l-md z-10"
+            onClick={nextSlide}
           >
-            <img
-              src={image}
-              alt={`Slide ${index}`}
-              className="w-full h-full object-cover sm:object-cover"
-            />
-          </div>
-        ))}
-        <button
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-l-md z-10"
-          onClick={nextSlide}
-        >
-          &lt;
-        </button>
-        <button
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-r-md z-10"
-          onClick={prevSlide}
-        >
-          &gt;
-        </button>
+            &lt;
+          </button>
+          <button
+            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-r-md z-10"
+            onClick={prevSlide}
+          >
+            &gt;
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

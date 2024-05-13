@@ -10,15 +10,10 @@ export const navigation = [
   { name: "Статья", href: "#", current: false },
 ];
 export const navigation1 = [
-  //   { name: "Портфолио", href: "#", current: false },
   { name: "Каталог", href: "#", current: false },
   { name: "О нас", href: "#", current: false },
   { name: "Отзывы ", href: "#", current: false },
   { name: "Доставка и оплата", href: "#", current: false },
-  //   { name: "Пломбы свинцовые, пластиковые", href: "#", current: false },
-  //   { name: "Мы в Whatsapp", href: "#", current: false },
-  //   { name: "Возврат обмен", href: "#", current: false },
-  //   { name: "Статья", href: "#", current: false },
 ];
 
 export const userNavigation = [

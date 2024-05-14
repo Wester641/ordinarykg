@@ -8,7 +8,7 @@ export default function ProductsCards() {
       <h2 className="text-3xl font-bold text-gray-900 text-center bg-green text-white my-3 ">
         Продукция
       </h2>
-      <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-4">
+      <div className="grid md:grid-cols-3 xs:grid-cols-2 lg:grid-cols-4 gap-4">
         {products.map((product, index) => (
           <Product
             key={index}

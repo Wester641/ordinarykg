@@ -19,7 +19,7 @@ export default function PromoSection() {
   return (
     <div className="bg-gray-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:pb-32  lg:pt-15">
           <h2 className="text-3xl font-bold text-gray-900 text-center bg-green text-white ">
             Группы товаров и услуг
           </h2>
@@ -28,7 +28,7 @@ export default function PromoSection() {
             {callouts.map((callout) => (
               <div
                 key={callout.name}
-                className="group relative  ring-offset-slate-100 flex flex-col items-center justify-center  border border-solid border-gray"
+                className="group relative  ring-offset-slate-100 flex flex-col items-center justify-center border border-[#d9d9d9]"
               >
                 <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
                   <img

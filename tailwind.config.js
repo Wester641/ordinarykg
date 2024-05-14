@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         // regalgray: "#f4f4f4",
         black: "#000000",
-        green: "#11B503",
+        green: "rgb(101,193,46)",
         "dark-green": "#215713",
         "mint-green": "#BDFFB8",
         white: "#FFFCF6",

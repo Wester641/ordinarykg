@@ -8,8 +8,12 @@ const Product = (props) => {
   return (
     <div className="w-72 relative group rounded bg-[#f4f4f4] ">
       <div className="max-w-80 max-h-80 relative overflow-y-hidden box-border">
-        <div className="p-2">
-          <img className="w-full h-full " src={props.img} alt="img" />
+        <div className="mt-2 w-[270px] h-[270px] m-auto  border border-[#d9d9d9]">
+          <img
+            className="w-full h-full object-contain"
+            src={props.img}
+            alt="img"
+          />
         </div>
       </div>
       <div className="max-w-80 py-6 flex flex-col gap-1 px-4">

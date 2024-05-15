@@ -1,7 +1,16 @@
+import image1 from "../Img/photo_5334619703034894239_x.jpg";
+import image2 from "../Img/photo_5334619703034894264_y.jpg";
+import image3 from "../Img/photo_5334619703034894273_x.jpg";
+import image4 from "../Img/photo_5334619703034894275_x.jpg";
+import image5 from "../Img/photo_5334619703034894294_y.jpeg";
+import image6 from "../Img/photo_5334619703034894310_y.jpg";
+import image7 from "../Img/photo_5334619703034894310_y.jpg";
+import image8 from "../Img/photo_5334619703034894311_x.jpeg";
+
 export const products = [
   {
     _id: "100001",
-    img: "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: image1,
     productName:
       "Round Table Clock lorem10 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price: "44.00",
@@ -9,7 +18,7 @@ export const products = [
   },
   {
     _id: "100002",
-    img: "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: image2,
     productName:
       "Round Table Clock lorem10 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price: "44.00",
@@ -17,7 +26,7 @@ export const products = [
   },
   {
     _id: "100003",
-    img: "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: image3,
     productName:
       "Round Table Clock lorem10 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price: "44.00",
@@ -25,7 +34,7 @@ export const products = [
   },
   {
     _id: "100004",
-    img: "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: image4,
     productName:
       "Round Table Clock lorem10  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price: "44.00",
@@ -33,7 +42,7 @@ export const products = [
   },
   {
     _id: "100005",
-    img: "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: image5,
     productName:
       "Round Table Clock lorem10 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price: "44.00",
@@ -41,7 +50,7 @@ export const products = [
   },
   {
     _id: "100006",
-    img: "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: image6,
     productName:
       "Round Table Clock lorem10 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price: "44.00",
@@ -49,7 +58,7 @@ export const products = [
   },
   {
     _id: "100007",
-    img: "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: image7,
     productName:
       "Round Table Clock lorem10 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price: "44.00",
@@ -57,7 +66,7 @@ export const products = [
   },
   {
     _id: "100008",
-    img: "https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: image8,
     productName:
       "Round Table Clock lorem10 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price: "44.00",

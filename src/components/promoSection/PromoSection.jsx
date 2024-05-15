@@ -41,15 +41,15 @@ export default function PromoSection() {
                     />
                   </div>
                 </div>
-                <h3 className="mt-6 text-sm text-gray-500">
-                  <a href={callout.href}>
-                    <span className="absolute inset-0 " />
-                    {callout.name}
-                  </a>
-                </h3>
-                <p className="text-base font-semibold text-gray-900">
-                  {callout.description}
-                </p>
+                <div className="flex items-center text-[20px]  justify-center flex-col w-full bg-green text-[#fff]">
+                  <h3 className="font-semibold  text-gray-500">
+                    <a href={callout.href}>
+                      <span className="absolute inset-0 " />
+                      {callout.name}
+                    </a>
+                  </h3>
+                  <p className="  text-gray-900">{callout.description}</p>
+                </div>
               </div>
             ))}
           </div>

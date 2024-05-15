@@ -8,6 +8,7 @@ import Promosale from "./components/header/promoSale/Promosale";
 import Footer from "./components/footer/Footer";
 import PromoBanner from "./components/promoSection/PromoBanner";
 import PromoSection2 from "./components/promoSection/PromoSection2";
+import Descriptions from "./components/descriptions/Descriptions";
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
       <ProductsCards />
       <PromoBanner />
       <PromoSection2 />
+      <Descriptions />
       <Section />
+
       <Footer />
     </div>
   );

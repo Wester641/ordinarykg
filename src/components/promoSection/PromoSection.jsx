@@ -30,12 +30,16 @@ export default function PromoSection() {
                 key={callout.name}
                 className="group relative  ring-offset-slate-100 flex flex-col items-center justify-center border border-[#d9d9d9]"
               >
-                <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
-                  <img
-                    src={callout.imageOrg ? callout.imageOrg : callout.imageSrc}
-                    alt={callout.imageAlt}
-                    className=" object-cover object-center"
-                  />
+                <div>
+                  <div className="relative flex items-center h-80 w-full overflow-hidden rounded-lg bg-[#fff] sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75">
+                    <img
+                      src={
+                        callout.imageOrg ? callout.imageOrg : callout.imageSrc
+                      }
+                      alt={callout.imageAlt}
+                      className="w-full h-full object-contain "
+                    />
+                  </div>
                 </div>
                 <h3 className="mt-6 text-sm text-gray-500">
                   <a href={callout.href}>

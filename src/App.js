@@ -5,6 +5,7 @@ import Section from "./components/main/Section";
 import ProductsCards from "./components/productsCards/ProductsCards";
 import NavbarSection from "./components/header/navbar/NavbarSection";
 import Promosale from "./components/header/promoSale/Promosale";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <PromoSection />
       <ProductsCards />
       <Section />
+      <Footer />
     </div>
   );
 }

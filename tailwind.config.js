@@ -9,7 +9,10 @@ module.exports = {
       },
       colors: {
         // regalgray: "#f4f4f4",
+
         black: "#000000",
+        bgftr: "rgb(50, 50, 50)",
+        textwhite: "rgb(255, 255, 255);",
         green: "rgb(101,193,46)",
         "dark-green": "#215713",
         "mint-green": "#BDFFB8",

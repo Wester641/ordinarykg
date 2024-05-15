@@ -6,6 +6,8 @@ import ProductsCards from "./components/productsCards/ProductsCards";
 import NavbarSection from "./components/header/navbar/NavbarSection";
 import Promosale from "./components/header/promoSale/Promosale";
 import Footer from "./components/footer/Footer";
+import PromoBanner from "./components/promoSection/PromoBanner";
+import PromoSection2 from "./components/promoSection/PromoSection2";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <MySlider />
       <PromoSection />
       <ProductsCards />
+      <PromoBanner />
+      <PromoSection2 />
       <Section />
       <Footer />
     </div>

@@ -3,6 +3,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        "3xl": "0 2px 10px 0 rgba(0,0,0,0.2),",
+        "4xl": "0 0 3px 1px rgba(0,0,0,0.2)",
+      },
+
       fontFamily: {
         sans: ["El_Messiri", "sans-serif"],
         serif: ["Manrope", "serif"],

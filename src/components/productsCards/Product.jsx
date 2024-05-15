@@ -1,12 +1,8 @@
 import React from "react";
-// import { BsSuitHeartFill } from "react-icons/bs";
-// import { GiReturnArrow } from "react-icons/gi";
-// import { FaShoppingCart } from "react-icons/fa";
-// import { MdOutlineLabelImportant } from "react-icons/md";
 
 const Product = (props) => {
   return (
-    <div className="max-w-72 relative group rounded bg-[#f4f4f4] ">
+    <div className="max-w-72 relative group rounded bg-[#f4f4f4] shadow-3xl cursor-pointer hover:shadow-4xl">
       <div className="max-w-80 max-h-80 relative overflow-y-hidden box-border">
         <div className="mt-2 w-[270px] h-[270px] m-auto border border-[#d9d9d9]">
           <img

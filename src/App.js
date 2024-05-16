@@ -9,6 +9,9 @@ import Footer from "./components/footer/Footer";
 import PromoBanner from "./components/promoSection/PromoBanner";
 import PromoSection2 from "./components/promoSection/PromoSection2";
 import Descriptions from "./components/descriptions/Descriptions";
+import Descriptions2 from "./components/descriptions/Descriptions2";
+import Descriptions3 from "./components/descriptions/Descriptions3";
+import DescMaps from "./components/descriptions/DescMaps";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
       <PromoBanner />
       <PromoSection2 />
       <Descriptions />
+      <Descriptions2 />
+      <Descriptions3 />
+      <DescMaps />
       <Section />
 
       <Footer />

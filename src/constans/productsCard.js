@@ -35,8 +35,7 @@ export const products = [
   {
     _id: "100004",
     img: image4,
-    productName:
-      "Round Table Clock lorem10  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    productName: "Round Table Clock lorem10  sed do eiusmod.",
     price: "44.00",
     color: "Black",
   },
@@ -51,8 +50,7 @@ export const products = [
   {
     _id: "100006",
     img: image6,
-    productName:
-      "Round Table Clock lorem10 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    productName: "Round Table Clock lorem10 sed do eiusmod.",
     price: "44.00",
     color: "Black",
   },
@@ -67,6 +65,29 @@ export const products = [
   {
     _id: "100008",
     img: image8,
+    productName:
+      "Round Table Clock lorem10 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    price: "44.00",
+    color: "Black",
+  },
+  {
+    _id: "100009",
+    img: image1,
+    productName: "Round Table Clock lorem10 sed do eiusmod.",
+    price: "44.00",
+    color: "Black",
+  },
+  {
+    _id: "1000010",
+    img: image2,
+    productName:
+      "Round Table Clock lorem10 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    price: "44.00",
+    color: "Black",
+  },
+  {
+    _id: "1000011",
+    img: image3,
     productName:
       "Round Table Clock lorem10 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     price: "44.00",

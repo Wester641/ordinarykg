@@ -1,7 +1,7 @@
 import MySlider from "./components/ simpleslider/SimpleSlider";
 import PromoSection from "./components/promoSection/PromoSection";
 import Header from "./components/header/Header";
-import Section from "./components/main/Section";
+// import Section from "./components/main/Section";
 import ProductsCards from "./components/productsCards/ProductsCards";
 import NavbarSection from "./components/header/navbar/NavbarSection";
 import Promosale from "./components/header/promoSale/Promosale";
@@ -13,6 +13,7 @@ import Descriptions2 from "./components/descriptions/Descriptions2";
 import Descriptions3 from "./components/descriptions/Descriptions3";
 import DescMaps from "./components/descriptions/DescMaps";
 import DescEnd from "./components/descriptions/DescEnd";
+import Portfolio from "./components/promoSection/Portfolio";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
       <Descriptions3 />
       <DescMaps />
       <DescEnd />
-      <Section />
+      <Portfolio />
+      {/* <Section /> */}
 
       <Footer />
     </div>

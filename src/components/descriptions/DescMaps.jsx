@@ -20,7 +20,7 @@ export default function DescMaps() {
                 <img src={el.icon} className="h-[60px] w-[60px]" alt="icon" />
                 <p className="text-[0.8rem] text-center">{el.description}</p>
               </div>
-              <p>{el.arrow}</p>
+              <p className="text-2xl ">{el.arrow}</p>
             </div>
           ))}
         </div>

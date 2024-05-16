@@ -1,9 +1,10 @@
 import PeopleICon from "./../Img/icon/people_icon.svg";
 import Arrow from "./../Img/icon/icon.svg";
-import descImage1 from "../Img/icon/1.png";
-import descImage2 from "../Img/icon/2.png";
-import descImage3 from "../Img/icon/3.png";
-import descImage4 from "../Img/icon/4.png";
+
+import descImage1 from "../Img/icon/ffICons/bag.png";
+import descImage2 from "../Img/icon/ffICons/smartphone(1).png";
+import descImage3 from "../Img/icon/ffICons/money.png";
+import descImage4 from "../Img/icon/ffICons/delivery-van.png";
 
 export const Descriptions1 = [
   {
@@ -103,7 +104,7 @@ export const DescMapsAndIcons = [
     id: 2,
     number: "2",
     icon: descImage2,
-    arrow: "=>",
+    arrow: "→",
 
     description: "Мы свяжемся с вами, чтобы обсудить все детали по заказу ",
   },
@@ -111,7 +112,7 @@ export const DescMapsAndIcons = [
     id: 3,
     number: "3",
     icon: descImage3,
-    arrow: "=>",
+    arrow: "→",
 
     description: "Внести оплату можно наличными или по безналичному счету",
   },
@@ -119,7 +120,7 @@ export const DescMapsAndIcons = [
     id: 4,
     icon: descImage4,
     number: "4",
-    arrow: "=>",
+    arrow: "→",
     description: "Доставим транспортной компанией, курьером или самовывоз",
   },
 ];

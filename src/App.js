@@ -12,6 +12,7 @@ import Descriptions from "./components/descriptions/Descriptions";
 import Descriptions2 from "./components/descriptions/Descriptions2";
 import Descriptions3 from "./components/descriptions/Descriptions3";
 import DescMaps from "./components/descriptions/DescMaps";
+import DescEnd from "./components/descriptions/DescEnd";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Descriptions2 />
       <Descriptions3 />
       <DescMaps />
+      <DescEnd />
       <Section />
 
       <Footer />

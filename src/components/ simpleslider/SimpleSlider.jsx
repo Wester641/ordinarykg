@@ -39,7 +39,7 @@ const Slider = () => {
   return (
     <section className="w-[97%] m-auto">
       <div
-        className="relative h-28 w-full shadow-md
+        className="relative h-28 ss:h-56 w-full shadow-md
  md:h-96 overflow-hidden "
       >
         <div className="flex w-full h-full">

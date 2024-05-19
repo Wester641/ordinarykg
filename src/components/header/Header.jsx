@@ -6,6 +6,7 @@ import {
   navigation1,
   userNavigation,
 } from "./../../constans/navigationData";
+import logoImage from "../../Img/icon/ContactsWhatsApp.svg";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -32,7 +33,7 @@ export default function Header() {
                     <div className="flex-shrink-0">
                       <img
                         className="h-8 w-8"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                        src={logoImage}
                         alt="Your Company"
                       />
                     </div>

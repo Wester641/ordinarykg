@@ -1,5 +1,5 @@
 import MySlider from "./components/ simpleslider/SimpleSlider";
-import PromoSection from "./components/promoSection/PromoSection";
+
 import Header from "./components/header/Header";
 // import Section from "./components/main/Section";
 import ProductsCards from "./components/productsCards/ProductsCards";
@@ -14,6 +14,7 @@ import Descriptions3 from "./components/descriptions/Descriptions3";
 import DescMaps from "./components/descriptions/DescMaps";
 import DescEnd from "./components/descriptions/DescEnd";
 import Portfolio from "./components/promoSection/Portfolio";
+import PromoSection from "./components/promoSection/PromoSection";
 
 function App() {
   return (

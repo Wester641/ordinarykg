@@ -4,7 +4,7 @@ import { callouts } from "../../constans/promoSection";
 export default function PromoSection2() {
   return (
     <div className="w-full  ">
-      <div className="flex flex-wrap max-w-[97%] justify-center gap-14 m-auto shadow-4xl py-5 my-5 ">
+      <div className="md:flex flex-wrap md:max-w-[97%] justify-center gap-14 m-auto shadow-4xl py-5 my-5 ">
         {callouts.map((card) => (
           <ul className="lg:flex lg:flex-col gap-3 text-center">
             <li

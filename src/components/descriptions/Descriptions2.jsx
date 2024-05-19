@@ -5,19 +5,19 @@ import Button from "../../ui/Button";
 
 export default function Descriptions2() {
   return (
-    <section className="max-w-full text-[#4d4d4d] shadow-4xl  m-5 py-5 pr-3 flex flex-col gap-10">
+    <section className="max-w-full text-[#4d4d4d] shadow-4xl  m-5 py-5 md:pr-3 flex flex-col gap-10">
       <div>
-        <h2 className=" text-xl text-center my-5">
+        <h2 className="text-xl text-center my-5">
           Лучшие условия для оптово-розничных покупок в интернет-магазине DMR
-          Company{" "}
+          Company.
         </h2>
         {Descriptions22.map((el) => (
           <div
-            className="flex hover:bg-zinc-300 cursor-pointer px-3 mx-3"
+            className="flex hover:bg-zinc-300 cursor-pointer py-2 md:px-3 mx-3"
             key={el.id}
           >
             <SectionDesc
-              className=""
+              className="hidden"
               icon={el.icon}
               description={el.description}
               subTitle={el.subTitle}

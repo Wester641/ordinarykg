@@ -7,10 +7,10 @@ export default function ProductsCards() {
   return (
     <>
       <div className="container mx-auto my-10 bg-[#fff]">
-        <h2 className="text-3xl font-bold text-gray-900 text-center   my-3 ">
+        <h2 className="text-3xl font-bold text-gray-900 text-center my-3 ">
           Продукция
         </h2>
-        <div className="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-4 mx-3">
           {products.map((product, index) => (
             <Product
               key={index}

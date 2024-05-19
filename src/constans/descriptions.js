@@ -96,7 +96,6 @@ export const DescMapsAndIcons = [
     id: 1,
     number: "1",
     icon: descImage1,
-    // arrow: "=>",
 
     description: "Обращайтесь по телефону или оставляйте заявки через сайт",
   },

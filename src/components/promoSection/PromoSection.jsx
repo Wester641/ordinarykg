@@ -6,12 +6,12 @@ export default function PromoSection() {
       <h2 className="lg:text-3xl font-bold text-gray-900 text-center my-5 bg-green text-white ">
         Группы товаров и услуг
       </h2>
-      <div className="grid grid-cols-3 overflow-hidden place-items-center gap-3  cursor-pointer">
+      <div className="grid grid-cols-3 overflow-hidden place-items-center gap-3  ">
         {callouts.map((el) => (
           <>
             <div
               key={el.id}
-              className="border w-full  h-32 sm:h-[450px] relative border-[#d9d9d9] hover:opacity-75"
+              className="border w-full  h-32 md:h-[450px] sm:h-[300px]  relative border-[#d9d9d9] cursor-pointer hover:opacity-75"
             >
               <a href="/#">
                 <img
@@ -22,7 +22,7 @@ export default function PromoSection() {
                   alt="img"
                 />
               </a>
-              <p className="bg-green text-[#fff] h-8 sm:h-full text-xs absolute w-full bottom-5 text-center opacity-80 ">
+              <p className="bg-green text-[#fff] h-8 sm:h-12 sm:text-base text-xs absolute w-full bottom-5 text-center opacity-80 ">
                 {el.name}
                 <span className="block">{el.description}</span>
               </p>

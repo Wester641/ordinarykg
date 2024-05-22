@@ -32,7 +32,7 @@ const Slider = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
+    const interval = setInterval(nextSlide, 11000);
     return () => clearInterval(interval);
   }, []);
 
@@ -62,13 +62,13 @@ const Slider = () => {
             </div>
           ))}
           <button
-            className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-l-md z-10"
+            className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black sm:bg-opacity-50 bg-opacity-20 text-white sm:px-4 sm:py-2 px-2 py-1 rounded-l-md z-1 "
             onClick={nextSlide}
           >
             &lt;
           </button>
           <button
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-r-md z-10"
+            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black sm:bg-opacity-50 bg-opacity-20 text-white sm:px-4 sm:py-2 px-2 py-1 rounded-r-md z-1"
             onClick={prevSlide}
           >
             &gt;

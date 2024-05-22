@@ -1,19 +1,19 @@
 export const navigation = [
-  { name: "Портфолио", href: "#", current: false },
-  { name: "Каталог", href: "#", current: false },
-  { name: "О нас", href: "#", current: false },
-  { name: "Отзывы ", href: "#", current: false },
-  { name: "Доставка и оплата", href: "#", current: false },
-  { name: "Пломбы свинцовые, пластиковые", href: "#", current: false },
-  { name: "Мы в Whatsapp", href: "#", current: false },
-  { name: "Возврат обмен", href: "#", current: false },
-  { name: "Статья", href: "#", current: false },
+  { id: 1, name: "Портфолио", href: "#", current: false },
+  { id: 2, name: "Каталог", href: "#", current: false },
+  { id: 3, name: "О нас", href: "#", current: false },
+  { id: 4, name: "Отзывы ", href: "#", current: false },
+  { id: 5, name: "Доставка и оплата", href: "#", current: false },
+  { id: 6, name: "Пломбы свинцовые, пластиковые", href: "#", current: false },
+  { id: 7, name: "Мы в Whatsapp", href: "#", current: false },
+  { id: 8, name: "Возврат обмен", href: "#", current: false },
+  { id: 9, name: "Статья", href: "#", current: false },
 ];
 export const navigation1 = [
-  { name: "Каталог", href: "#", current: false },
-  { name: "О нас", href: "#", current: false },
-  { name: "Отзывы ", href: "#", current: false },
-  { name: "Доставка и оплата", href: "#", current: false },
+  { name: "Каталог", href: "/catalog", current: false },
+  { name: "О нас", href: "/aboutUs", current: false },
+  { name: "Отзывы ", href: "/comments", current: false },
+  { name: "Доставка и оплата", href: "/delivery", current: false },
 ];
 
 export const userNavigation = [

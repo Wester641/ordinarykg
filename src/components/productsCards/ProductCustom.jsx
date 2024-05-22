@@ -15,9 +15,15 @@ export default function ProductCustom({ image, title, price, color }) {
       <div className="h-1/2">
         <p className="flex flex-col h-full justify-between gap-1 text-[#4b4a4a] text-[11px] lg:text-base sm:text-[12px] py-1 px-1 ">
           {title}
-          <span className="block text-md lg:text-base"> {color}</span>
-          <span className="block text-sm lg:text-base"> ${price}</span>
-          <button className="w-full bg-red-500 text-[#fff] hover:shadow-3xl rounded-[2px] ">
+          <span className="block text-md lg:text-base xl:text-xl">
+            {" "}
+            {color}
+          </span>
+          <span className="block text-sm lg:text-base xl:text-xl">
+            {" "}
+            ${price}
+          </span>
+          <button className="w-full bg-red-500 text-[#fff] hover:shadow-3xl rounded-[2px] xl:py-1 opacity-90 ">
             <a href="/#">Купить</a>
           </button>
         </p>

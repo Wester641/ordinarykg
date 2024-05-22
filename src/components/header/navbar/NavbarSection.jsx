@@ -1,23 +1,28 @@
 import React, { useState } from "react";
 
 const navbarArray = [
-  { name: "Главная", href: "/#" },
+  { id: 1, name: "Главная", href: "/home" },
   {
+    id: 2,
     name: "Каталог",
-    href: "/#",
+    href: "/catalog",
     submenu: [
-      "Акции",
-      "Материалы для упаковки банковских ценностей",
-      "Расходные материалы для инкассации",
-      "Материалы для пломбирования",
-      "Технические ткани",
-      "Мешковина, упаковочная ткань",
+      { id: 1, name: "Акции", path: "/sales" },
+      {
+        id: 2,
+        name: "Материалы для упаковки банковских ценностей",
+        path: "/sales",
+      },
+      { id: 3, name: "Расходные материалы для инкассации", path: "/sales" },
+      { id: 4, name: "Материалы для пломбирования", path: "/sales" },
+      { id: 5, name: "Технические ткани", path: "/sales" },
+      { id: 6, name: "Мешковина, упаковочная ткань", path: "/sales" },
     ],
   },
-  { name: "О нас", href: "/#" },
-  { name: "Контакты", href: "/#" },
-  { name: "Доставка и оплата", href: "/#" },
-  { name: "Статьи", href: "/#" },
+  { id: 3, name: "О нас", href: "/aboutUs" },
+  { id: 4, name: "Контакты", href: "/contacts" },
+  { id: 5, name: "Доставка и оплата", href: "/delivery" },
+  { id: 6, name: "Статьи", href: "/#" },
 ];
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -46,7 +51,7 @@ export default function NavbarSection() {
       <div className="absolute top-3 shadow-md z-10 bg-slate-50 w-[80%] text-center flex items-center justify-center gap-5  h-12 border-[2px] border-green ">
         {navbarArray.map((el) => (
           <div
-            key={el.name}
+            key={el.id}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             className="relative"
@@ -65,13 +70,14 @@ export default function NavbarSection() {
             {el.submenu && dropdownOpen && (
               <div className="absolute top-full left-0 mt-3 w-72 bg-slate-50 shadow-md text-start">
                 {el.submenu.map((submenuItem) => (
-                  <a
-                    key={submenuItem}
-                    href="/#"
-                    className="block px-4 text-[0.8rem] hover:text-green hover:opacity-80 py-2 text-gray-700 hover:bg-gray-100"
-                  >
-                    {submenuItem}
-                  </a>
+                  <div key={submenuItem.id}>
+                    <a
+                      href={submenuItem.path}
+                      className="block px-4 text-[0.8rem] hover:text-green hover:opacity-80 py-2 text-gray-700 hover:bg-gray-100"
+                    >
+                      {submenuItem.name}
+                    </a>
+                  </div>
                 ))}
               </div>
             )}

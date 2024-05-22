@@ -1,6 +1,6 @@
 import MySlider from "./components/ simpleslider/SimpleSlider";
 
-import Header from "./components/header/Header";
+// import Header from "./components/header/Header";
 // import Section from "./components/main/Section";
 
 import NavbarSection from "./components/header/navbar/NavbarSection";
@@ -16,12 +16,14 @@ import DescEnd from "./components/descriptions/DescEnd";
 import Portfolio from "./components/promoSection/Portfolio";
 import PromoSection from "./components/promoSection/PromoSection";
 import ProductsCardsCustom from "./components/productsCards/ProductCardsCustom";
+import HeaderCustom from "./components/header/HeaderCustom";
 
 function App() {
   return (
     <div>
       <Promosale />
-      <Header />
+      {/* <Header /> */}
+      <HeaderCustom />
       <NavbarSection />
       <MySlider />
       <PromoSection />

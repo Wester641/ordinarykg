@@ -1,5 +1,7 @@
 Проект можно посмотреть по ссылке https://ordinarykg.vercel.app/.
 
+Привет! Важная информация!, теперь этот проект не поддерживается и не обновится!, я мигрировал проект в Next.js. Новый проект можно посмотреть тут https://ordinarynextkg.vercel.app/, Спасибо)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
